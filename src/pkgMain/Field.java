@@ -127,11 +127,6 @@ public class Field
 					help[i][j] = false; // 1)
 
 				}
-				else if ((neighbors == 2 || neighbors == 3) && field[i][j])
-				{
-					// continue living // 2)
-
-				}
 				else if (neighbors > 3 && field[i][j])
 				{
 					help[i][j] = false; // 3)
