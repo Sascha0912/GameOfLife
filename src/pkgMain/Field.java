@@ -1,16 +1,24 @@
 package pkgMain;
 
+import java.awt.Color;
 import java.util.Random;
 
 public class Field
 {
 
 	boolean[][] field;
+	Zeichenblatt z;
 
 	public Field(int rows, int columns)
 	{
 
 		this.field = new boolean[rows][columns];
+		z = new Zeichenblatt(600, 600);
+		z.benutzerkoordinaten(0, 0, 20, 20);
+
+		z.setHintergrundFarbe(Color.WHITE);
+		z.setVordergrundFarbe(Color.BLACK);
+
 	}
 
 	public Field(int rows, int columns, boolean[][] field)
@@ -157,25 +165,30 @@ public class Field
 
 	public void display()
 	{
+		int x = 19;
+		int y = 19;
 
 		for (int i = 0; i < field.length; i++)
 		{
-
+			x = 19;
 			for (int j = 0; j < field[i].length; j++)
 			{
 
 				if (field[i][j])
 				{
-					System.out.print("O ");
+					z.rechteck(x, y, 1.0, 1.0);
+					z.anzeigen();
+					z.pause(10);
 				}
 				else
 				{
-					System.out.print("  ");
+					// nichts malen
 				}
+				x--;
 			}
-			System.out.println();
+			y--;
 		}
-		System.out.println("_________________________");
+
 	}
 
 }
