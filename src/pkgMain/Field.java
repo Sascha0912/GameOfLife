@@ -170,7 +170,7 @@ public class Field
 
 		for (int i = 0; i < field.length; i++)
 		{
-			x = 19;
+			x = 0;
 			for (int j = 0; j < field[i].length; j++)
 			{
 
@@ -184,7 +184,7 @@ public class Field
 				{
 					// nichts malen
 				}
-				x--;
+				x++;
 			}
 			y--;
 		}
