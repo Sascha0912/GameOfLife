@@ -58,19 +58,6 @@ public class Field
 		}
 	}
 
-	/*
-	 * public void fillBlinkerSechsMalSechs() { field[0][0] = false; field[0][1]
-	 * = false; field[0][2] = false; field[0][3] = false; field[0][4] = false;
-	 * field[0][5] = false; field[1][0] = false; field[1][1] = true; field[1][2]
-	 * = true; field[1][3] = false; field[1][4] = false; field[1][5] = false;
-	 * field[2][0] = false; field[2][1] = true; field[2][2] = true; field[2][3]
-	 * = false; field[2][4] = false; field[2][5] = false; field[3][0] = false;
-	 * field[3][1] = false; field[3][2] = false; field[3][3] = true; field[3][4]
-	 * = true; field[3][5] = false; field[4][0] = false; field[4][1] = false;
-	 * field[4][2] = false; field[4][3] = true; field[4][4] = true; field[4][5]
-	 * = false; field[5][0] = false; field[5][1] = false; field[5][2] = false;
-	 * field[5][3] = false; field[5][4] = false; field[5][5] = false; }
-	 */
 	public void step()
 	{
 

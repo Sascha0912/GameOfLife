@@ -539,61 +539,26 @@ public class Zeichenblatt
 	/**
 	 * Testprogramm
 	 */
-	public static void main(String[] args)
-	{
-
-		// Zeichenblatt erzeugen
-		Zeichenblatt zb = new Zeichenblatt(600, 600);
-
-		// Koordinatensystem definieren
-		zb.benutzerkoordinaten(0.0, 0.0, 10.0, 10.0);
-
-		// Farben setzen
-		zb.setHintergrundFarbe(Color.green);
-		zb.setVordergrundFarbe(Color.blue);
-		zb.loeschen();
-
-		// Zeichnen
-		zb.rechteck(0.0, 0.0, 2.0, 2.0);
-		for (int i = 0; i < 10; i++)
-			zb.punkt(i, i, 0.2);
-		// Bisheriges anzeigen
-		zb.anzeigen();
-		// 1 Sekunde warten
-		zb.pause(1000);
-
-		// Vordergrundfarbe wechseln
-		zb.setVordergrundFarbe(Color.yellow);
-		zb.rechteck(2.0, 2.0, 4.0, 4.0);
-		// Bisheriges anzeigen
-		zb.anzeigen();
-		// 1 Sekunde warten
-		zb.pause(1000);
-
-		// Bilder aus Dateien eibinden
-		// zb.zeichneBild("world.gif", 5.0, 5.0);
-		// zb.zeichneBild("smiley.gif", 3.0, 3.0, 0.5, 0.5);
-		// Bisheriges anzeigen
-		zb.anzeigen();
-		// 1 Sekunde warten
-		zb.pause(1000);
-
-		// Turtle-Grafik
-		zb.setVordergrundFarbe(Color.red);
-		zb.gehe(2.0, 2.0);
-		// zb.zeichneBild("devil.gif");
-		zb.linie(2.0, 4.0);
-		// zb.zeichneBild("devil.gif");
-		zb.geheWeiter(3.0);
-		// zb.zeichneBild("devil.gif");
-		zb.drehen(45.0);
-		zb.geheWeiter(3.0);
-		// zb.zeichneBild("devil.gif");
-
-		// Anzeigen
-		zb.anzeigen();
-	}
-
+	/*
+	 * public static void main(String[] args) { // Zeichenblatt erzeugen
+	 * Zeichenblatt zb = new Zeichenblatt(600, 600); // Koordinatensystem
+	 * definieren zb.benutzerkoordinaten(0.0, 0.0, 10.0, 10.0); // Farben setzen
+	 * zb.setHintergrundFarbe(Color.green); zb.setVordergrundFarbe(Color.blue);
+	 * zb.loeschen(); // Zeichnen zb.rechteck(0.0, 0.0, 2.0, 2.0); for (int i =
+	 * 0; i < 10; i++) zb.punkt(i, i, 0.2); // Bisheriges anzeigen
+	 * zb.anzeigen(); // 1 Sekunde warten zb.pause(1000); // Vordergrundfarbe
+	 * wechseln zb.setVordergrundFarbe(Color.yellow); zb.rechteck(2.0, 2.0, 4.0,
+	 * 4.0); // Bisheriges anzeigen zb.anzeigen(); // 1 Sekunde warten
+	 * zb.pause(1000); // Bilder aus Dateien eibinden //
+	 * zb.zeichneBild("world.gif", 5.0, 5.0); // zb.zeichneBild("smiley.gif",
+	 * 3.0, 3.0, 0.5, 0.5); // Bisheriges anzeigen zb.anzeigen(); // 1 Sekunde
+	 * warten zb.pause(1000); // Turtle-Grafik
+	 * zb.setVordergrundFarbe(Color.red); zb.gehe(2.0, 2.0); //
+	 * zb.zeichneBild("devil.gif"); zb.linie(2.0, 4.0); //
+	 * zb.zeichneBild("devil.gif"); zb.geheWeiter(3.0); //
+	 * zb.zeichneBild("devil.gif"); zb.drehen(45.0); zb.geheWeiter(3.0); //
+	 * zb.zeichneBild("devil.gif"); // Anzeigen zb.anzeigen(); }
+	 */
 	// ==========================================================================
 
 }
