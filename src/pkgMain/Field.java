@@ -165,7 +165,7 @@ public class Field
 				{
 					z.rechteck(x, y, 1.0, 1.0);
 					z.anzeigen();
-					z.pause(10);
+					z.pause(1);
 				}
 				else
 				{
